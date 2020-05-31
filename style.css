@@ -29,7 +29,7 @@ body {
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
-  background-color: var(--basic-gray);
+  background-color: var(--basic-pale-gray);
 }
 
 a {
@@ -49,7 +49,7 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-pale-gray);
+  background-color: var(--basic-gray);
 }
 
 .site-navigation {
@@ -93,8 +93,10 @@ img {
 
 /* Button */
 
-.button-1 {
-  font: inherit;
+.button {  
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -103,55 +105,34 @@ img {
   border: none;
 }
 
-.button-2 {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-light-green);
-  border: none;
+.button-web-sites {
+  background-color: var(--basic-light-red);
 }
 
-.button-3 {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-light-yellow);
-  border: none;
-}
-
-.button-1:hover,
-.button-1:focus {
+.button-web-sites:hover,
+.button-web-sites:focus {
   background-color: var(--basic-red);
 }
 
-.button-2:hover,
-.button-2:focus {
+.button-addenda {
+  background-color: var(--basic-light-green);
+}
+
+.button-addenda:hover,
+.button-addenda:focus {
   background-color: var(--basic-green);
 }
 
-.button-3:hover,
-.button-3:focus {
+.button-presentations {
+  background-color: var(--basic-light-yellow);
+}
+
+.button-presentations:hover,
+.button-presentations:focus {
   background-color: var(--basic-yellow);
 }
 
-.filter-button {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-black);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-pale-gray);
-  border: none;
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--basic-light-gray);
-}
+/* Title */
 
 .page-title {
   font-size: 55px;
@@ -159,7 +140,7 @@ img {
   font-weight: 500;
   text-align: center;
   color: var(--basic-black);
-  background-color: var(--basic-pale-gray);
+  background-color: var(--basic-gray);
 }
 
 /* Filters */
@@ -180,14 +161,23 @@ img {
   color: var(--basic-azure-gray);
 }
 
+.filter-button {  
+  color: var(--basic-black);  
+  background-color: var(--basic-pale-gray);  
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-light-gray);
+}
+
 /* Catalog */
 
 .catalog-list {
   list-style: none;
 }
 
-
-/* Main footer */
+/* Social button */
 
 .footer-social ul {
   list-style: none;
@@ -216,7 +206,7 @@ img {
   color: var(--basic-twilight-gray);
 }
 
-.Write-to-us {
+.write-to-us {
   display: none;
 }
 
