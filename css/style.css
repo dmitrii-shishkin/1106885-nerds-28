@@ -3,6 +3,7 @@
   --basic-gray: #888888;
   --basic-light-gray: #DFDFDF;
   --basic-light-gray2: #D5D5D5;
+  --basic-light-gray3: #E1E1E1;
   --basic-black: #000000;
   --basic-azure-gray: #283136;
   --basic-dark-gray: #666666;
@@ -29,7 +30,7 @@ body {
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
-  background-color: var(--basic-pale-gray);
+  background-color: var(--basic-white);
 }
 
 a {
@@ -49,7 +50,7 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-gray);
+  background-color: var(--basic-pale-gray);
 }
 
 .site-navigation {
@@ -72,6 +73,27 @@ img {
   color: var(--basic-light-red);
 }
 
+/* Slider */
+
+.slider ol {
+  list-style: none;
+  background-color: var(--basic-pale-gray);
+}
+
+.slider-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.slider-ad-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-azure-gray);
+}
+
 /* Services*/
 
 .services-list {
@@ -83,17 +105,19 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .services-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--basic-azure-gray);
 }
 
 /* Button */
 
-.button {  
+.button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -103,6 +127,11 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-red);
   border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-red);
 }
 
 .button-web-sites {
@@ -132,7 +161,73 @@ img {
   background-color: var(--basic-yellow);
 }
 
-/* Title */
+/* About us */
+
+.about-us-slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.about-us-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-azure-gray);
+}
+
+.about-us h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-azure-gray);
+}
+
+.about-us ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-azure-gray);
+}
+
+.about-us-ad {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.about-us-advantages-rating {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.percentage {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.about-us-advantages-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-azure-gray);
+}
+
+/* Companies */
+
+.companies ul {
+  list-style: none;
+}
+
+
+/* Filters */
 
 .page-title {
   font-size: 55px;
@@ -140,10 +235,8 @@ img {
   font-weight: 500;
   text-align: center;
   color: var(--basic-black);
-  background-color: var(--basic-gray);
+  background-color: var(--basic-pale-gray);
 }
-
-/* Filters */
 
 .filter legend {
   font-size: 18px;
@@ -161,9 +254,32 @@ img {
   color: var(--basic-azure-gray);
 }
 
-.filter-button {  
-  color: var(--basic-black);  
-  background-color: var(--basic-pale-gray);  
+.filter-input-range {
+  background-color: var(--basic-pale-gray);
+
+}
+
+.filter-label-price {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-azure-gray);
+}
+
+.filter-input-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--basic-azure-gray);
+  background-color: var(--basic-pale-gray);
+  border: none;
+}
+
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--basic-pale-gray);
 }
 
 .filter-button:hover,
@@ -173,8 +289,76 @@ img {
 
 /* Catalog */
 
+.catalog h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-light-gray);
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+  color: var(--basic-black);
+}
+
 .catalog-list {
   list-style: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-pale-gray);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--basic-light-gray);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Footer */
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark-gray);
 }
 
 /* Social button */
@@ -185,6 +369,7 @@ img {
 
 .social-button {
   color: var(--basic-white);
+  background-color: var(--basic-light-gray3);
 }
 
 .social-button:hover,
