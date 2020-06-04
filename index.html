@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,24 +9,28 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <div class="basket-navigation">
-        <a href="basket.html">Корзина</a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="customers.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="basket-navigation">
+            <a class="basket-link" href="basket.html">Корзина</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Интернет магазин Nerd's</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
@@ -52,7 +56,8 @@
           <label for="slider3"></label>
           <img src="img/nerds-index-slide3.jpg" width="760" height="431" alt="Фото планшета и смартфона">
           <p class="slider-slogan">Только ночь, только хардкор</p>
-          <p class="slider-ad-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <p class="slider-ad-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+          </p>
           <a class="button" href="">Узнать больше</a>
         </li>
       </ol>
@@ -84,8 +89,8 @@
     <section class="about-us">
       <h2 class="visually-hidden">О нас</h2>
       <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
-        покладая рук, как роботы.</p>
+      <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+        креатива.Работаем не покладая рук, как роботы.</p>
       <h3>Выполняем заказы на разработку:</h3>
       <ul>
         <li>Веб-сайтов любой сложности</li>
@@ -119,42 +124,49 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="contacts">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map.png" width="1440" height="416"
-        alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <h3>Nёrds design studio</h3>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a class="button" href="">Напишите нам</a>
-    </section>
-    <section class="write-to-us">
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="your-name">Ваше имя:</label>
-        <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="your-email">Ваш e-mail:</label>
-        <input id="your-email" type="email" name="email" placeholder="email@example.com">
-        <label for="text">Текст письма:</label>
-        <textarea id="text" name="message" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
-      <button>Закрыть</button>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul>
-        <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img
-              src="https://via.placeholder.com/150x100" alt=""></a></li>
-        <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img
-              src="https://via.placeholder.com/150x100" alt=""></a></li>
-        <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img
-              src="https://via.placeholder.com/150x100" alt=""></a></li>
-      </ul>
-    </section>
-    <p class="friendship">Давайте дружить, это выгодно!</p>
-    <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    <div class="container">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <h3>Nёrds design studio</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button" href="">Напишите нам</a>
+      </section>
+    </div>
+    <img class="map" src="img/map.png" width="1440" height="416"
+      alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+
+    <div class="container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img
+                src="https://via.placeholder.com/150x100" alt=""></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img
+                src="https://via.placeholder.com/150x100" alt=""></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img
+                src="https://via.placeholder.com/150x100" alt=""></a></li>
+        </ul>
+      </section>
+      <div class="footer-text">
+        <p class="friendship">Давайте дружить, это выгодно!</p>
+        <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
   </footer>
+  <section class="modal-write-to-us">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="your-name">Ваше имя:</label>
+      <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
+      <label for="your-email">Ваш e-mail:</label>
+      <input id="your-email" type="email" name="email" placeholder="email@example.com">
+      <label for="text">Текст письма:</label>
+      <textarea id="text" name="message" placeholder="В свободной форме"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <button>Закрыть</button>
+  </section>
 </body>
 
 </html>
