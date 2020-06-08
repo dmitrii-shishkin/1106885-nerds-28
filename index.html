@@ -34,31 +34,51 @@
     <h1 class="visually-hidden">Интернет магазин Nerd's</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
-      <ol>
-        <li>
-          <input type="radio" name="slider" id="slider1" checked>
-          <label for="slider1"></label>
-          <img src="img/nerds-index-slide1.jpg" width="760" height="431" alt="Фото смартфонов">
-          <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
-          <p class="slider-ad-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="">Узнать больше</a>
+      <ol class="slider-list">
+        <li class="slider-item">
+          <div class="slider-input-radio">
+            <input type="radio" name="slider" id="slider1" checked>
+            <label for="slider1"></label>
+          </div>
+          <div class="slider-image">
+            <img src="img/nerds-index-slide1.jpg" width="760" height="431" alt="Фото смартфонов">
+          </div>
+          <div class="slider-text">
+            <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
+            <p class="slider-ad-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
         </li>
-        <li>
-          <input type="radio" name="slider" id="slider2">
-          <label for="slider2"></label>
-          <img src="img/nerds-index-slide2.jpg" width="760" height="431" alt="Фото мониторов">
-          <p class="slider-slogan">Любим математику как никто другой</p>
-          <p class="slider-ad-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <a class="button" href="">Узнать больше</a>
+        <li class="slider-item">
+          <div class="slider-input-radio">
+            <input type="radio" name="slider" id="slider2">
+            <label for="slider2"></label>
+          </div>
+          <div class="slider-image">
+            <img src="img/nerds-index-slide2.jpg" width="760" height="431" alt="Фото мониторов">
+          </div>
+          <div class="slider-text">
+            <p class="slider-slogan">Любим математику как никто другой</p>
+            <p class="slider-ad-text">Никакого креатива, только математические формулы для расчета идеальных пропорций
+            </p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
         </li>
-        <li>
-          <input type="radio" name="slider" id="slider3">
-          <label for="slider3"></label>
-          <img src="img/nerds-index-slide3.jpg" width="760" height="431" alt="Фото планшета и смартфона">
-          <p class="slider-slogan">Только ночь, только хардкор</p>
-          <p class="slider-ad-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-          </p>
-          <a class="button" href="">Узнать больше</a>
+        <li class="slider-item">
+          <div class="slider-input-radio">
+            <input type="radio" name="slider" id="slider3">
+            <label for="slider3"></label>
+          </div>
+          <div class="slider-image">
+            <img src="img/nerds-index-slide3.jpg" width="760" height="431" alt="Фото планшета и смартфона">
+          </div>
+          <div class="slider-text">
+            <p class="slider-slogan">Только ночь, только хардкор</p>
+            <p class="slider-ad-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+              начинается.
+            </p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
         </li>
       </ol>
 
@@ -86,40 +106,46 @@
         </li>
       </ul>
     </section>
+
     <section class="about-us">
-      <h2 class="visually-hidden">О нас</h2>
-      <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
-        креатива.Работаем не покладая рук, как роботы.</p>
-      <h3>Выполняем заказы на разработку:</h3>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <img src="img/nerds-illustration1.png" width="360" height="208" alt="Логотип Нёрдс">
-      <p class="about-us-ad">с 2004 года Любим точность во всем:</p>
-      <table class="about-us-advantages">
-        <tr class="about-us-advantages-rating">
-          <td>146<sup class="percentage">%</sup></td>
-          <td>100<sup class="percentage">%</sup></td>
-          <td>50<sup class="percentage">%</sup></td>
-        </tr>
-        <tr about-us-advantages-text>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
-        </tr>
-      </table>
+      <div class="about-us-container">
+        <h2 class="visually-hidden">О нас</h2>
+        <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+          креатива.Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="about-us-container-advantages">
+        <img src="img/nerds-illustration1.png" width="360" height="208" alt="Логотип Нёрдс">
+        <p class="about-us-ad">с 2004 года Любим точность во всем:</p>
+        <table class="about-us-advantages">
+          <tr class="about-us-advantages-rating">
+            <td>146<sup class="percentage">%</sup></td>
+            <td>100<sup class="percentage">%</sup></td>
+            <td>50<sup class="percentage">%</sup></td>
+          </tr>
+          <tr about-us-advantages-text>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
     </section>
+
     <section class="companies">
       <h2 class="visually-hidden">Компании</h2>
-      <ul>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" width="199"
+      <ul class="companies-list">
+        <li class="companies-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" width="199"
               height="68" alt="Логотип Html Academy"></a></li>
-        <li><a href=""><img src="img/barbershop-logo.png" width="209" height="90" alt="Логотип Barbershop"></a></li>
-        <li><a href=""><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pink"></a></li>
-        <li><a href=""><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a></li>
+        <li class="companies-item"><a href=""><img src="img/barbershop-logo.png" width="209" height="90" alt="Логотип Barbershop"></a></li>
+        <li class="companies-item"><a href=""><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pink"></a></li>
+        <li class="companies-item"><a href=""><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a></li>        
       </ul>
     </section>
   </main>
