@@ -42,6 +42,12 @@ img {
   height: auto;
 }
 
+/* Visually hidden */
+
+.visually-hidden {
+  visibility: hidden;
+}
+
 /* Grid */
 
 .page {
@@ -142,6 +148,7 @@ img {
 /* Slider */
 
 
+
 .slider-item {
   display: flex;
   flex-direction: row-reverse;
@@ -155,7 +162,7 @@ img {
   display: none;
 }
 
-.slider-text {
+.slider-text {  
   width: 538px;
 }
 
