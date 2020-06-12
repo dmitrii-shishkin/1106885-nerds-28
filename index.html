@@ -147,14 +147,14 @@
     <section class="companies container">
       <h2 class="visually-hidden">Компании</h2>
       <ul class="companies-list">
-        <li class="companies-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img
+        <li class="companies-item"><a class="companies-link" href="https://htmlacademy.ru/intensive/htmlcss"><img
               src="img/html-academy-logo.png" width="199" height="68" alt="Логотип Html Academy"></a></li>
-        <li class="companies-item"><a href=""><img src="img/barbershop-logo.png" width="209" height="90"
-              alt="Логотип Barbershop"></a></li>
-        <li class="companies-item"><a href=""><img src="img/pink-logo.png" width="185" height="52"
-              alt="Логотип Pink"></a></li>
-        <li class="companies-item"><a href=""><img src="img/mishka-logo.png" width="173" height="84"
-              alt="Логотип Mishka"></a></li>
+        <li class="companies-item"><a class="companies-link" href=""><img src="img/barbershop-logo.png" width="209"
+              height="90" alt="Логотип Barbershop"></a></li>
+        <li class="companies-item"><a class="companies-link" href=""><img src="img/pink-logo.png" width="185"
+              height="52" alt="Логотип Pink"></a></li>
+        <li class="companies-item"><a class="companies-link" href=""><img src="img/mishka-logo.png" width="173"
+              height="84" alt="Логотип Mishka"></a></li>
       </ul>
     </section>
   </main>
@@ -175,12 +175,12 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img
-                src="https://via.placeholder.com/150x100" alt=""></a></li>
-          <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img
-                src="https://via.placeholder.com/150x100" alt=""></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img src="img/vk-icon.svg"
+                alt="Вконтакте"></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img src="img/fb-icon.svg"
+                alt="Фейсбук"></a></li>
           <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img
-                src="https://via.placeholder.com/150x100" alt=""></a></li>
+                src="img/insta-icon.svg" alt="Инстаграм"></a></li>
         </ul>
       </section>
       <div class="footer-text">
@@ -189,19 +189,29 @@
       </div>
     </div>
   </footer>
-  <section class="modal-write-to-us">
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="your-name">Ваше имя:</label>
-      <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
-      <label for="your-email">Ваш e-mail:</label>
-      <input id="your-email" type="email" name="email" placeholder="email@example.com">
-      <label for="text">Текст письма:</label>
-      <textarea id="text" name="message" placeholder="В свободной форме"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <button>Закрыть</button>
-  </section>
+  <div class="container">
+    <section class="modal-write-to-us">
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-container">
+          <div class="modal-item">
+            <label for="your-name">Ваше имя:</label>
+            <input id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          </div>
+          <div class="modal-item email">
+            <label for="your-email">Ваш e-mail:</label>
+            <input id="your-email" type="email" name="email" placeholder="email@example.com" required>
+          </div>
+          <div class="modal-item-message">
+            <label for="text">Текст письма:</label>
+            <textarea id="text" name="message" rows="3" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <a class="modal-close-button" href=""><img src="img/close-cross.svg" alt="Закрыть"></a>
+    </section>
+  </div>
 </body>
 
 </html>
