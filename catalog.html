@@ -8,7 +8,6 @@
   <link href="normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation">
@@ -36,13 +35,23 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Стоимость:</legend>
-            <input class="visually-hidden filter-input-range" type="range" min="0" max="15000">
-            <label class="filter-label-price" for="price-from">от</label>
-            <input class="filter-input-text" type="number" name="min-price" id="price-from" value="0">
-            <label class="filter-label-price" for="price-up">до</label>
-            <input class="filter-input-text" type="number" name="max-price" id="price-up" value="15000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price" for="price-from">от</label>
+                <input type="number" name="min-price" id="price-from" value="0">
+                <label class="max-price" for="price-up">до</label>
+                <input type="number" name="max-price" id="price-up" value="15000">
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -98,17 +107,19 @@
         </form>
       </section>
       <section class="catalog">
-      <h2 class="visually-hidden">Каталог</h2>
-      <h3>Сортировать:</h3>
-      <ul class="sort-list">
-        <li class="sort-item"><a href="">По цене</a></li>
-        <li class="sort-item"><a href="">По типу</a></li>
-        <li class="sort-item"><a href="">По названию</a></li>
-      </ul>      
+        <div class="catalog-sort">
+          <h2 class="visually-hidden">Каталог</h2>
+          <h3 class="sort-title">Сортировать:</h3>
+          <ul class="sort-list">
+            <li class="sort-item sort-item-current sort-direction"><a>По цене</a></li>
+            <li class="sort-item"><a href="">По типу</a></li>
+            <li class="sort-item"><a href="">По названию</a></li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/sedona.jpg" width="360" height="580" alt="Фото сайта Sedona">
+              <img src="img/sedona.jpg" width="358" height="580" alt="Фото сайта Sedona">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -120,10 +131,9 @@
               </div>
             </article>
           </li>
-
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/pink.jpg" width="360" height="578" alt="Фото приложения Pink">
+              <img src="img/pink.jpg" width="358" height="578" alt="Фото приложения Pink">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -135,10 +145,9 @@
               </div>
             </article>
           </li>
-
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/barbershop.jpg" width="360" height="578" alt="Фото сайта Barbershop">
+              <img src="img/barbershop.jpg" width="358" height="578" alt="Фото сайта Barbershop">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -150,10 +159,9 @@
               </div>
             </article>
           </li>
-
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/mishka.jpg" width="360" height="578" alt="Фото сайта Mishka">
+              <img src="img/mishka.jpg" width="358" height="578" alt="Фото сайта Mishka">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -165,10 +173,9 @@
               </div>
             </article>
           </li>
-
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/a+.jpg" width="360" height="578" alt="Фото сайта A Plus">
+              <img src="img/a+.jpg" width="358" height="578" alt="Фото сайта A Plus">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -180,10 +187,9 @@
               </div>
             </article>
           </li>
-
           <li>
             <article class="catalog-item catalog-option">
-              <img src="img/kvast.jpg" width="360" height="578" alt="Фото сайта Кваст">
+              <img src="img/kvast.jpg" width="358" height="578" alt="Фото сайта Кваст">
               <div class="catalog-price-modal">
                 <div class="catalog-price-text">
                   <a class="catalog-product-name" href="">
@@ -195,40 +201,47 @@
               </div>
             </article>
           </li>
-
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="">2</a></li>
           <li class="pagination-item"><a href="">3</a></li>
-          <li class="pagination-item"><a href="">Следующая</a></li>
+          <li class="pagination-item pagination-item-text"><a href="">Следующая</a></li>
         </ul>
       </section>
     </div>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <h3>Nёrds design studio</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="button" href="">Напишите нам</a>
-      </section>
-    </div>
     <img class="map" src="img/map.png" width="1440" height="416"
       alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-
     <div class="container">
+      <section class="footer-contacts-window">
+        <div class="contact-text-container">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button" href="">Напишите нам</a>
+        </div>
+      </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img src="img/vk-icon.svg"
-                alt="Вконтакте"></a></li>
-          <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img src="img/fb-icon.svg"
-                alt="Фейсбук"></a></li>
-          <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img
-                src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+          <li>
+            <a class="social-button" href=""><span class="visually-hidden">Вконтакте</span><img src="img/vk-icon.svg"
+                alt="Вконтакте">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img src="img/fb-icon.svg"
+                alt="Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img src="img/insta-icon.svg"
+                alt="Инстаграм">
+            </a>
+          </li>
         </ul>
       </section>
       <div class="footer-text">
@@ -238,7 +251,7 @@
     </div>
   </footer>
   <div class="container">
-    <section class="modal-write-to-us">
+    <section class="modal modal-write-to-us">
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-container">
@@ -257,7 +270,7 @@
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
-      <a class="modal-close-button" href=""><img src="img/close-cross.svg" alt="Закрыть"></a>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </div>
 </body>
