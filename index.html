@@ -200,25 +200,26 @@
   <div class="container">
     <section class="modal modal-write-to-us">
       <h2 class="modal-title">Напишите нам</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-container">
-          <div class="modal-item">
+          <div class="modal-item name">
             <label for="your-name">Ваше имя:</label>
-            <input id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
+            <input class="write-to-us-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия" required>
           </div>
           <div class="modal-item email">
             <label for="your-email">Ваш email:</label>
-            <input id="your-email" type="email" name="email" placeholder="email@example.com" required>
+            <input class="write-to-us-email" id="your-email" type="email" name="email" placeholder="email@example.com" required>
           </div>
           <div class="modal-item-message">
             <label for="text">Текст письма:</label>
-            <textarea id="text" name="message" rows="4" placeholder="В свободной форме"></textarea>
+            <textarea class="write-to-us-message" id="text" name="message" rows="4" placeholder="В свободной форме" required></textarea>
           </div>
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-  </div>  
+  </div>
+  <script src="js/modal.min.js"></script>  
 </body>
 </html>

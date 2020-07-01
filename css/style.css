@@ -5,13 +5,6 @@
 * Browsers: last 2 version,not dead,not ie<=11
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 2 version,not dead,not ie<=11
-*/
-
 :root {
   --basic-pale-gray: #EEEEEE;
   --basic-gray: #C4C4C4;
@@ -19,6 +12,7 @@
   --basic-light-gray2: #D5D5D5;
   --basic-light-gray3: #E1E1E1;
   --basic-light-gray4: #D7DCDE;
+  --basic-light-gray5: #B4B9BB;
   --basic-black: #000000;
   --basic-azure-gray: #283136;
   --basic-dark-gray: #666666;
@@ -765,7 +759,7 @@ input[type="range"].visually-hidden {
 }
 
 .filter legend {
-  margin-bottom: 16px;  
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -864,7 +858,7 @@ input[type="range"].visually-hidden {
   opacity: 0.3;
 }
 
-.filter-button {  
+.filter-button {
   padding-right: 89px;
   padding-left: 88px;
   color: var(--basic-black);
@@ -1040,7 +1034,7 @@ input[type="range"].visually-hidden {
   top: -40px;
   right: 0;
   background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   opacity: 0.12;
 }
 
@@ -1051,14 +1045,14 @@ input[type="range"].visually-hidden {
 
 .catalog-price-text h3 {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   margin-top: 27px;
   margin-bottom: 11px;
 }
 
 .catalog-price-text p {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   margin-bottom: 32px;
   line-height: 19px;
 }
@@ -1079,7 +1073,7 @@ input[type="range"].visually-hidden {
   left: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
   width: 360px;
   background-color: var(--basic-pale-gray);
   border-bottom-left-radius: 5px;
@@ -1089,7 +1083,7 @@ input[type="range"].visually-hidden {
 
 .catalog-price-text {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   width: 235px;
@@ -1310,6 +1304,17 @@ input[type="range"].visually-hidden {
 
 .modal-show {
   display: block;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.modal-error {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 /* Modal close */
@@ -1322,7 +1327,7 @@ input[type="range"].visually-hidden {
   height: 0;
   background-color: transparent;
   border: none;
-  cursor: pointer;     
+  cursor: pointer;
 }
 
 .modal-close::before {
@@ -1333,8 +1338,8 @@ input[type="range"].visually-hidden {
   width: 21px;
   height: 21px;
   background-image: url(../img/close-cross.svg);
-  background-repeat: no-repeat;  
-  opacity: 0.3;  
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .modal-close:hover::before,
@@ -1367,7 +1372,7 @@ input[type="range"].visually-hidden {
   margin-top: 63px;
 }
 
-.modal-form {
+.write-to-us-form {
   margin-top: 37px;
   margin-left: 100px;
   width: 760px;
@@ -1439,19 +1444,108 @@ input[type="range"].visually-hidden {
 }
 
 .modal-item input:hover,
+.modal-item-message textarea:hover {
+  color: var(--basic-twilight-gray);
+  border: 2px solid var(--basic-light-gray5);
+}
+
 .modal-item input:focus,
-.modal-item-message textarea:hover,
 .modal-item-message textarea:focus {
-  border-color: var(--basic-black);
+  border: 2px solid var(--basic-black);
+  color: var(--basic-twilight-gray);
   opacity: 1;
 }
 
 .modal-write-to-us .button {
   display: block;
-  padding: 15px 84px;    
+  padding: 15px 84px;
   margin-bottom: 84px;
   cursor: pointer;
-  border: none;  
+  border: none;
+}
+
+/* Animations */
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .main-header-logo:active {
