@@ -1221,6 +1221,17 @@ input[type="range"].visually-hidden {
   color: var(--basic-dark-gray);
 }
 
+.contact-text-container .phone {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark-gray);
+}
+
 .contact-text-container .button {
   margin-top: 20px;
   padding: 16px 44px;
@@ -1363,9 +1374,8 @@ input[type="range"].visually-hidden {
 
 .modal-write-to-us {
   width: 960px;
-  top: 192px;
+  top: 175px;
   bottom: auto;
-
 }
 
 .modal-write-to-us h2 {
