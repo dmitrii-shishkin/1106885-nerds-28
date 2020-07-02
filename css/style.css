@@ -1159,7 +1159,15 @@ input[type="range"].visually-hidden {
 
 /* Main footer */
 
+.map img {
+  position: absolute;    
+  width: 100%;
+  z-index: 1;  
+}
+
 .map iframe {
+  position: relative;
+  z-index: 2;
   width: 100%;
   border: none;
 }
@@ -1180,6 +1188,7 @@ input[type="range"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: var(--basic-white);
+  z-index: 2;
 }
 
 .contact-text-container {
@@ -1300,6 +1309,7 @@ input[type="range"].visually-hidden {
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   display: none;
+  z-index: 2;  
 }
 
 .modal-show {
